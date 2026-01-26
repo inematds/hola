@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-sky-100 to-sky-200 min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-hola-orange text-white font-bold text-xl rounded-full
+           shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-hola-yellow text-gray-800 font-bold text-xl rounded-full
+           shadow-lg hover:scale-105 active:scale-95 transition-transform duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-3xl shadow-xl p-6;
+  }
+
+  .vocabulary-card {
+    @apply flex flex-col items-center p-6 bg-white rounded-3xl shadow-lg
+           active:scale-95 transition-transform duration-200 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
