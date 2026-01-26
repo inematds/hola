@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-hola.png" alt="Hola Logo" width="400">
+  <img src="public/images/logo-hola-capivara.png" alt="Hola Logo - Capivara" width="500">
 </p>
 
 <h1 align="center">Hola - Plataforma Infantil de Espanhol</h1>
@@ -349,6 +349,7 @@ Os concorrentes globais (Duolingo, Lingokids, Dinolingo) não focam:
 
 | Documento | Descrição |
 |-----------|-----------|
+| [Metodologia 5 Fases](docs/metodologia-5-fases.md) | Guia prático para criar qualquer projeto |
 | [PRD](docs/prd/) | Product Requirements Document completo |
 | [Arquitetura](docs/architecture/) | Decisões técnicas e padrões |
 | [Análise de Negócio](docs/business-analysis.md) | SWOT, concorrentes, oportunidades |
